@@ -32,4 +32,9 @@ scan.o:   scan.c jas.h scan.h parse.h
 sym.o:    sym.c jas.h
 
 clean:
-	rm -f *.o as68
+	rm -f *.o 
+
+distclean: clean
+	rm as68
+
+clobber: distclean

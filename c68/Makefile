@@ -232,7 +232,10 @@ clean:
 		$(RM) *$(S)uue
 		$(RM) *$(S)rs?
 		$(RM) *$(S)rzc
+
+distclean: clobber
 		$(RM) $(PROG)
+
 
 #------------------------------------------------------------------------------
 # Special section to handle building programs

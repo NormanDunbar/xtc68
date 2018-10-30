@@ -162,8 +162,9 @@ clean:
 	@$(RM) *.ilk
 	@$(RM) *.ncb
 	@$(RM) *.opt
-	@$(RM) $(PROG)
 
+distclean: clean
+	@$(RM) $(PROG)
 zip:
 	-$(RM) cc$(S)zip
 	$(ZIP) cc$(S)zip $(PROG)

@@ -40,9 +40,12 @@ slb :   ${OBJ}
 	${CC} ${CFLAGS} ${DEFINES} $<
 
 clean :
-	${RM} -f ${OBJ} *_i *_s ${PROG}
+	${RM} -f ${OBJ} *_i *_s 
 
-clobber : clean
+distclean: clean
+	${RM} -f ${PROG}
+
+clobber : distclean
 
 
 archive :

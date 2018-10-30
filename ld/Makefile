@@ -21,4 +21,10 @@ $(PROG): $(OBJS)
 ld.o:	ldold.c
 	$(CC) $(CFLAGS) -c -o ld.o ldold.c
 clean:
-	rm -f *.o $(PROG)
+	rm -f *.o 
+
+distclean: clean
+	rm -f $(PROG)
+
+clobber: distclean
+

@@ -18,4 +18,10 @@ qcpp: $(OBJ)
 	$(CC) $(CFLAGS) -oqcpp $(OBJ)
 
 clean:
-	rm -f *.o qcpp
+	rm -f *.o 
+
+distclean: clean
+	rm -f qcpp
+
+clobber: distclean
+
