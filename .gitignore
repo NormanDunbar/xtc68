@@ -1,0 +1,9 @@
+*.o
+as68/as68
+c68/c68
+cc/qcc
+cpp/qcpp
+ld/qld
+slb/slb
+
+
